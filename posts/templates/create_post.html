@@ -1,4 +1,12 @@
 
 <h1> Create New Post</h1>
 
-{{form}}
+<form action="" method="post">
+
+    {{form}}
+
+    {% csrf_token %}
+     
+    <input type="submit" value="Create Post">
+</form>
+
