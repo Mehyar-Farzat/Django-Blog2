@@ -5,7 +5,7 @@ from .forms import PostForm
 # Create your views here.
 def create_post(request):
     if request.method == 'POST':
-        form = PostForm(request.POST,request.FILES)
+        form = PostForm(request.POST)
         if form.is_valid():
             form.save()
             
